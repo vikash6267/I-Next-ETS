@@ -12,7 +12,7 @@
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ## Overview  </br>
-I next is a service based company that is build product for the client.
+I next is a service based company that is build product for the clients.
 
 # Setup And Testing 
 ```
