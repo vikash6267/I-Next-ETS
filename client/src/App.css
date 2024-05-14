@@ -34,3 +34,14 @@ body {
 *:hover::-webkit-scrollbar-thumb {
   visibility: visible;
 }
+.hoverImg:hover {
+  background-image: url("../public/images/card.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.btn {
+  color: #04a6cf;
+  font-weight: bold;
+  font-size: 18px;
+}
