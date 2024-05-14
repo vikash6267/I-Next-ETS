@@ -36,5 +36,11 @@ body {
   visibility: visible;
 }
 
-
-
+.bg {
+  position: relative;
+  background-image: url("./images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  /* Apply blur effect */
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+}
