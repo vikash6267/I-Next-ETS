@@ -5,6 +5,7 @@
 html,
 body {
   overflow-x: hidden;
+
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -34,3 +35,6 @@ body {
 *:hover::-webkit-scrollbar-thumb {
   visibility: visible;
 }
+
+
+

@@ -15,7 +15,7 @@ function SingleService({services,services2=false, serviceName}) {
         services?.map((service)=>(
                 
             <li key={service.id}> 
-            <Link to={service.path} className='hover:text-blue-600' >
+            <Link to={service.path} className='hover:text-blue-600 hover:scale-x-150 text' >
                 {service.title}
             </Link>
 
