@@ -5,6 +5,7 @@
 html,
 body {
   overflow-x: hidden;
+
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -34,6 +35,7 @@ body {
 *:hover::-webkit-scrollbar-thumb {
   visibility: visible;
 }
+<<<<<<< HEAD
 .hoverImg:hover {
   background-image: url("../public/images/card.png");
   background-size: cover;
@@ -44,4 +46,14 @@ body {
   color: #04a6cf;
   font-weight: bold;
   font-size: 18px;
+=======
+
+.bg {
+  position: relative;
+  background-image: url("./images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  /* Apply blur effect */
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+>>>>>>> 843e11e5a0b939dd943a3c6855d101276099f3be
 }

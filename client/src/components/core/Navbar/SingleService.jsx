@@ -9,11 +9,22 @@ function SingleService({ services, services2 = false, serviceName }) {
     <div>
       <h1 className=" mb-7 font-bold text-xl">{serviceName}</h1>
 
+<<<<<<< HEAD
       <ul className=" flex flex-col gap-2 text-lg  ">
         {services?.map((service) => (
           <li key={service.id}>
             <Link to={service.path} className="hover:text-blue-600 ">
               {service.title}
+=======
+
+   <ul className=' flex flex-col gap-2 text-lg  '>
+    {
+        services?.map((service)=>(
+                
+            <li key={service.id}> 
+            <Link to={service.path} className='hover:text-blue-600 hover:scale-x-150 text' >
+                {service.title}
+>>>>>>> 843e11e5a0b939dd943a3c6855d101276099f3be
             </Link>
           </li>
         ))}
