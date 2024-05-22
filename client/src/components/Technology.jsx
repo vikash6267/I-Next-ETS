@@ -15,11 +15,13 @@ const Technology = () => {
   };
   return (
     <>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-8">
         <h2 className="text-3xl font-bold">Technologies We Serve</h2>
-        <p>Empowering your business with the latest technologies we use! </p>
+        <p className="text-xl">
+          Empowering your business with the latest technologies we use!{" "}
+        </p>
         <div className="">
-          <div className="flex items-center justify-center  gap-4 lg:gap-28 sm:flex flex-wrap">
+          <div className="flex items-center justify-center mt-10 gap-4 lg:gap-28 sm:flex flex-wrap">
             <button
               onClick={() => handleTabChange("frontend")}
               className={` font-bold text-xl ${

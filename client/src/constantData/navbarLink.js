@@ -1,26 +1,31 @@
-export const navbar =[
+export const navbar = [
     {
-        id:1,
-        title:"Services",
-        path:"/service"
+        id: 1,
+        title: "Services",
+        path: "/service"
     },
     {
-        id:2,
-        title:"How We Work",
-        path:"/workinfo"
-    },
-
-    {
-        id:3,
-        title:"Work Done",
-        path:"prework"
+        id: 2,
+        title: "How We Work",
+        path: "/workinfo"
     },
 
     {
-        id:4,
-        title:"About",
-        path:"/about"
+        id: 3,
+        title: "Work Done",
+        path: "prework"
     },
-  
+
+    {
+        id: 4,
+        title: "About",
+        path: "/about"
+    },
+    {
+        id: 5,
+        title: "Contact US",
+        path: "/contact"
+    },
+
 
 ]

@@ -8,7 +8,7 @@ const Card = ({ title, desc }) => {
     <div className=" hoverImg flex flex-col gap-4 p-10  w-[420px] h-[400%]">
       <span className="text-2xl font-bold lg:flex lg:flex-wrap">{title}</span>
       <p className="text-xl">{desc}</p>
-      <Link className="flex items-center gap-2 btn">
+      <Link className="flex items-center gap-2 btns">
         View More{" "}
         <span className="flex items-center mt-1 hover:border-2 w-7 h-7 justify-center rounded-full">
           <MdDoubleArrow />
@@ -83,7 +83,7 @@ const IndustryExpertise = () => {
   return (
     <div className=" mt-36 flex flex-col gap-8">
       <span className="text-3xl font-bold">Industry Expertise</span>
-      <p>
+      <p className="text-xl my-7">
         Putting forth our more than 14 years of expertise to transform
         businesses digitally regardless of the industry. We believe your unique
         perspective will be an add-on to our valuable industry insights

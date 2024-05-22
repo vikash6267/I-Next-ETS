@@ -1,30 +1,55 @@
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import IndustryExpertise from "./components/IndustryExpertise";
-import Technology from "./components/Technology";
+import Mode from "./components/Mode";
 import Navbar from "./components/common/Navbar";
 import CustomPointer from "./components/common/Pointer";
-import Home from "./pages/Home";
+import Footer from "./components/common/footer/Footer";
+import HomePage from "./pages/HomePage";
+import { Routes, Route } from "react-router-dom";
+import NotFound from "./pages/NotFound";
+import WorkDone from "./pages/WorkDone";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import ButtomIcon from "./components/ButtomIcon";
+import HowWeWork from "./pages/HowWeWork";
+import Loader from "./components/Loader";
+
 function App() {
+  const [toggle, setToggle] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    // Clean up the timer
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="flex min-h-screen w-screen flex-col  ">
-      <Navbar />
-      <Home />
+      {loading ? ( // Render the loader if loading is true
+        <Loader />
+      ) : (
+        // Render the content once loading is false
+        <>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/prework" element={<WorkDone />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/workinfo" element={<HowWeWork />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
 
-
-
-     
-      <div className=" mt-[87px] w-11/12 mx-auto">
-        <Technology />
-        <IndustryExpertise />
-      </div>
-<<<<<<< HEAD
-      <br />
-      <br />
-      <br />
-=======
-
-      <CustomPointer />
->>>>>>> 843e11e5a0b939dd943a3c6855d101276099f3be
+          <CustomPointer />
+          <Mode toggle={toggle} setToggle={setToggle} />
+          <ButtomIcon />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

@@ -5,7 +5,7 @@
 html,
 body {
   overflow-x: hidden;
-
+  scroll-behavior: smooth;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -35,19 +35,17 @@ body {
 *:hover::-webkit-scrollbar-thumb {
   visibility: visible;
 }
-<<<<<<< HEAD
 .hoverImg:hover {
   background-image: url("../public/images/card.png");
   background-size: cover;
   background-position: center;
   color: white;
 }
-.btn {
+.btns {
   color: #04a6cf;
   font-weight: bold;
   font-size: 18px;
-=======
-
+}
 .bg {
   position: relative;
   background-image: url("./images/bg.jpg");
@@ -55,5 +53,203 @@ body {
   background-size: cover;
   /* Apply blur effect */
   backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
->>>>>>> 843e11e5a0b939dd943a3c6855d101276099f3be
+}
+
+.help {
+  background-color: #04a6cf;
+}
+.whatsapp {
+  background-color: #25d366;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+.workCard:nth-child(even):hover {
+  background-color: #f78da7;
+}
+
+.workCard:nth-child(odd):hover {
+  background-color: #fcb900;
+}
+
+/* culture  */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes scroll-up {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 18s linear infinite;
+}
+
+.animate-scroll-up {
+  animation: scroll-up 18s linear infinite;
+}
+
+.contact-btn {
+  background-image: linear-gradient(
+    to right,
+    #2f7336 0%,
+    #aa3a38 51%,
+    #2f7336 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.contact-btn {
+  background-image: linear-gradient(
+    to right,
+    #2f7336 0%,
+    #aa3a38 51%,
+    #2f7336 100%
+  );
+  margin: 10px 0; /* Adjusted margin for better alignment */
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  width: 100%; /* Make the button full width */
+}
+
+.contact-btn:hover {
+  background-position: right center; /* Change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.loader {
+  animation: rotate 1s infinite;
+  height: 50px;
+  width: 50px;
+}
+
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.loader:before {
+  animation: ball1 1s infinite;
+  background-color: #fff;
+  box-shadow: 30px 0 0 #ff3d00;
+  margin-bottom: 10px;
+}
+.loader:after {
+  animation: ball2 1s infinite;
+  background-color: #ff3d00;
+  box-shadow: 30px 0 0 #fff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #ff3d00;
+  }
+  50% {
+    box-shadow: 0 0 0 #ff3d00;
+    margin-bottom: 0;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #ff3d00;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #fff;
+  }
+  50% {
+    box-shadow: 0 0 0 #fff;
+    margin-top: -20px;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #fff;
+    margin-top: 0;
+  }
 }
