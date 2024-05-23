@@ -13,6 +13,8 @@ import Contact from "./pages/Contact";
 import ButtomIcon from "./components/ButtomIcon";
 import HowWeWork from "./pages/HowWeWork";
 import Loader from "./components/Loader";
+import PortFolio from "./pages/PortFolio";
+import Career from "./pages/Career";
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -41,6 +43,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/workinfo" element={<HowWeWork />} />
+            <Route path="/portfolio" element={<PortFolio />} />
+            <Route path="/career" element={<Career />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
 
