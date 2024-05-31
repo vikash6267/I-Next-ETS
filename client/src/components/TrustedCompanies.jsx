@@ -2,7 +2,7 @@ import React from "react";
 const TrustedCompanies = () => {
   return (
     <div div className="my-16">
-      <p className="text-center !important">
+      <p className="text-center text-xl !important">
         Trusted by companies all over the world.
       </p>
       <br />

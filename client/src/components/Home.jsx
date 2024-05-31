@@ -32,7 +32,7 @@ function Home() {
                   display: "block",
                 }}
                 omitDeletionAnimation={false}
-                className="lg:text-3xl text-sm font-bold"
+                className="lg:text-3xl text-xl font-bold"
               />
 
               <div className="mt-5 text-xl font-semibold leading-snug">

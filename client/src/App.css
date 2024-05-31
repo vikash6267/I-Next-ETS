@@ -268,3 +268,8 @@ body {
 .animate-float {
   animation: float 2s ease-in-out infinite;
 }
+
+#border {
+  border-bottom: 2px dotted black;
+  padding-bottom: 18px;
+}

@@ -128,9 +128,9 @@ const Navbar = () => {
                     <p className="hover:text-orange-500">{link.title}</p>
                     <IoIosArrowDropdownCircle />
 
-                    <div className="invisible absolute top-[50%] z-[1000] flex min-w-[95vw] left-[50%] translate-x-[-50%] flex-col rounded-lg bg-white border p-4 opacity-0 transition-all duration-150 group-hover:visible group-hover:translate-y-[1.65em] group-hover:opacity-100">
+                    <div className="invisible absolute top-[50%] z-[1000] flex min-w-[95vw] left-[100%] translate-x-[-40%] flex-col rounded-lg bg-white border p-4 opacity-0 transition-all duration-150 group-hover:visible group-hover:translate-y-[1.65em] group-hover:opacity-100">
                       <div className="grid grid-cols-4 mt-6 text-xl w-11/12 mx-auto">
-                        <div className="font-bold text-3xl leading-snug">
+                        <div className="font-bold text-3xl leading-snug ">
                           Drive your digital success with our experts
                         </div>
                         <div

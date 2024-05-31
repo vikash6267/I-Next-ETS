@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaYoutube } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
@@ -151,8 +151,8 @@ function Footer() {
               <FaTwitter size={25} />
             </Link>
             <Link class="footer-social-link youtube" to="#" target="_blank">
-              <span class="hidden-link-text">Youtube</span>
-              <FaYoutube size={25} />
+              <span class="hidden-link-text">Facebook</span>
+              <FaFacebook size={25} />
             </Link>
             <Link class="footer-social-link github" to="#" target="_blank">
               <span class="hidden-link-text">Github</span>

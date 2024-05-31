@@ -173,7 +173,7 @@ const Career = () => {
           </div>
         </div>
       </div>
-
+      <br />
       <CareerForm />
     </div>
   );

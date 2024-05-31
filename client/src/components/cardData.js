@@ -257,3 +257,218 @@ export const AboutProject = [
     },
 
 ]
+
+export const hiring = [
+    {
+        id: 1,
+        title: "Professional and visually appealing website design."
+    },
+    {
+        id: 2,
+        title: "Rational & versatile packages."
+    },
+    {
+        id: 3,
+        title: "On-time delivery with quick turnaround."
+    },
+    {
+        id: 4,
+        title: "Effective communication and project management."
+    },
+    {
+        id: 5,
+        title: "Post-launch support and maintenance services."
+    },
+
+]
+export const hiringUx = [
+    {
+        id: 1,
+        title: "Thoughtful and experienced professionals with a deep understanding of UX design."
+    },
+    {
+        id: 2,
+        title: "A collaborative approach to understanding the needs of our clients.        "
+    },
+    {
+        id: 3,
+        title: "Data-driven design that ensures effective, engaging, and user-friendly outcomes."
+    },
+    {
+        id: 4,
+        title: "Dedicated to consistently delivering innovative designs to drive business results."
+    },
+    {
+        id: 5,
+        title: "Meticulous attention to every aspect of our design solutions."
+    },
+    {
+        id: 6,
+        title: "Enabling prompt and efficient results while remaining adaptable to flexible needs."
+    },
+    {
+        id: 7,
+        title: "Unwavering commitment to our client's success ensures an exceptional experience."
+    },
+    {
+        id: 8,
+        title: "Prioritizing open and transparent communication and incorporating their feedback."
+    },
+    {
+        id: 9,
+        title: "Prioritizing to create inclusive and accessible designs that cater to every user's need."
+    },
+    {
+        id: 10,
+        title: "Successful track record of high-quality UX design solutions with satisfied outcomes."
+    },
+
+]
+export const brandsApproach = [
+    {
+        id: 1,
+        title: "You choose an unprofessional web design agency."
+    },
+    {
+        id: 2,
+        title: "You opted for an unorganized design process."
+    },
+    {
+        id: 3,
+        title: "Your marketing efforts fail because of poor website design."
+    },
+    {
+        id: 4,
+        title: "You are losing many good prospects due to an unresponsive website."
+    },
+    {
+        id: 5,
+        title: "You are in a dilemma as your website visitors do not convert into leads."
+    },
+    {
+        id: 6,
+        title: "You are exhausted of requesting frequent revisions."
+    },
+    {
+        id: 7,
+        title: " You are frustrated with Unclear communication or misalignment of project goals."
+    },
+]
+
+export const services = [
+    {
+        id: 1,
+        title: "UX Design",
+        desc: "UX design is all about making your digital products easy and interactive for users. Our design experts help improve your user engagement and drive leads with remarkable designs escalating user experience."
+
+    },
+    {
+        id: 2,
+        title: "Responsive Design",
+        desc: "Your business requires a highly responsive website to earn a positive response from your users. KrishaWeb expert design team ensures your website is accessible on all devices and delivers a seamless experience for your users."
+    },
+    {
+        id: 3,
+        title: "Custom Web Design",
+        desc: "Your website represents your business online. We understand the unique requirements or objectives of your business. Our custom web design solutions design websites that fit your needs and enhance your online visibility."
+    },
+    {
+        id: 4,
+        title: "eCommerce Design",
+        desc: "Your e-commerce design must be user-friendly, optimized for sales, and attractive. Our experts design pages that are easy to navigate, clear product display, and streamline checkout that drives business growth."
+    },
+    {
+        id: 5,
+        title: "Website Redesign",
+        desc: "You know how frustrating it can be to come across an outdated website. We hate it too. KrishaWeb’s experienced team is dedicated to providing customized redesign solutions to kickstart your business and help you land more clients. We have the skills and expertise to deliver the results you’re looking for."
+    },
+    {
+        id: 6,
+        title: "Product Design",
+        desc: "Helping businesses turn their ideas into reality. They offer support in areas like user research, design, prototyping, and manufacturing so that businesses can create and launch successful new products. Through product design, you can tap into specialized expertise and bring innovative products to market with ease."
+    }
+]
+
+export const uiUx = [
+    {
+        id: 1,
+        title: "Lack of skilled in-house team to complete a project."
+    },
+    {
+        id: 2,
+        title: "Have limited resources to meet project deadlines."
+    },
+    {
+        id: 3,
+        title: "Not working around the clock or incomplete work."
+    },
+    {
+        id: 4,
+        title: "Your team is unable to manage work as per your requirements."
+    },
+    {
+        id: 5,
+        title: "Your resources are unable to deliver high-quality work."
+    },
+    {
+        id: 6,
+        title: "Failing to ensure that projects are completed to a high standard."
+    },
+    {
+        id: 7,
+        title: " In-house employees cost you more than your project or workload."
+    },
+    {
+        id: 8,
+        title: "Inefficient time management and communication."
+    },
+]
+
+export const uxServices = [
+    {
+        id: 1,
+        title: "UX Research",
+        desc: "UX design is all about making your digital products easy and interactive for users. Our design experts help improve your user engagement and drive leads with remarkable designs escalating user experience."
+
+    },
+    {
+        id: 2,
+        title: "User Interface Design",
+        desc: "Your business requires a highly responsive website to earn a positive response from your users. KrishaWeb expert design team ensures your website is accessible on all devices and delivers a seamless experience for your users."
+    },
+    {
+        id: 3,
+        title: "UX Strategy",
+        desc: "Your website represents your business online. We understand the unique requirements or objectives of your business. Our custom web design solutions design websites that fit your needs and enhance your online visibility."
+    },
+    {
+        id: 4,
+        title: "UX Audit",
+        desc: "Your e-commerce design must be user-friendly, optimized for sales, and attractive. Our experts design pages that are easy to navigate, clear product display, and streamline checkout that drives business growth."
+    },
+    {
+        id: 5,
+        title: "UI/UX Consulting",
+        desc: "You know how frustrating it can be to come across an outdated website. We hate it too. KrishaWeb’s experienced team is dedicated to providing customized redesign solutions to kickstart your business and help you land more clients. We have the skills and expertise to deliver the results you’re looking for."
+    },
+    {
+        id: 6,
+        title: "UX Analysis",
+        desc: "Helping businesses turn their ideas into reality. They offer support in areas like user research, design, prototyping, and manufacturing so that businesses can create and launch successful new products. Through product design, you can tap into specialized expertise and bring innovative products to market with ease."
+    },
+    {
+        id: 7,
+        title: "Interface Design",
+        desc: "Helping businesses turn their ideas into reality. They offer support in areas like user research, design, prototyping, and manufacturing so that businesses can create and launch successful new products. Through product design, you can tap into specialized expertise and bring innovative products to market with ease."
+    },
+    {
+        id: 8,
+        title: "Product Design",
+        desc: "Helping businesses turn their ideas into reality. They offer support in areas like user research, design, prototyping, and manufacturing so that businesses can create and launch successful new products. Through product design, you can tap into specialized expertise and bring innovative products to market with ease."
+    },
+    {
+        id: 8,
+        title: "Mobile Design App",
+        desc: "Helping businesses turn their ideas into reality. They offer support in areas like user research, design, prototyping, and manufacturing so that businesses can create and launch successful new products. Through product design, you can tap into specialized expertise and bring innovative products to market with ease."
+    },
+]

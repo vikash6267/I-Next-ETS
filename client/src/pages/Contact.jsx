@@ -73,7 +73,11 @@ const Contact = () => {
             <span className="px-4 py-3 bg-cyan-500 rounded-md text-xl">
               <FaLocationDot />
             </span>
-            <span>A-8 Sukh Sagar Phase-4 Mittal college road</span>
+            <span>
+              {" "}
+              Plot No - 11 ,2nd floor, near MANOHAR DAIRY, Zone-I, Maharana
+              Pratap Nagar, Bhopal, Madhya Pradesh 462011
+            </span>
           </div>
           <div className="flex items-center gap-4">
             <span className="px-4 py-3 bg-cyan-500 rounded-md  text-xl">

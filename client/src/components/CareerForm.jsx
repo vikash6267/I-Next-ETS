@@ -51,6 +51,14 @@ const CareerForm = () => {
         }
       );
       setSuccessMessage(response.data.message);
+      setFormData({
+        name: "",
+        email: "",
+        contact: "",
+        message: "",
+        applicationFor: "",
+        resume: null,
+      });
       setErrorMessage("");
     } catch (error) {
       setErrorMessage(
@@ -61,63 +69,66 @@ const CareerForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Career Form</h2>
+    <div className="my-10">
+      <h2 className="text-2xl font-bold my-4 text-center">Career Form</h2>
       {successMessage && (
         <p className="mb-4 text-green-600">{successMessage}</p>
       )}
       {errorMessage && <p className="mb-4 text-red-600">{errorMessage}</p>}
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="grid lg:grid-cols-2 lg:gap-10">
         <div className="mb-4">
-          <label className="block text-gray-700 mb-2" htmlFor="name">
+          <label className="block text-xl text-gray-700 mb-2" htmlFor="name">
             Name
           </label>
           <input
             type="text"
             id="name"
             name="name"
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full  text-xl px-3 py-2 border border-yellow-600 h-16 rounded-lg "
             value={formData.name}
             onChange={handleChange}
             required
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 mb-2" htmlFor="email">
+          <label className="block text-xl text-gray-700 mb-2 " htmlFor="email">
             Email
           </label>
           <input
             type="email"
             id="email"
             name="email"
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full text-xl px-3 py-2 border border-yellow-600 h-16 rounded-lg"
             value={formData.email}
             onChange={handleChange}
             required
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 mb-2" htmlFor="contact">
+          <label className="block text-xl text-gray-700 mb-2" htmlFor="contact">
             Contact Number
           </label>
           <input
             type="text"
             id="contact"
             name="contact"
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full text-xl px-3 py-2 border border-yellow-600 h-16 rounded-lg"
             value={formData.contact}
             onChange={handleChange}
             required
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 mb-2" htmlFor="position">
+          <label
+            className="block text-xl text-gray-700 mb-2"
+            htmlFor="position"
+          >
             Select Position
           </label>
           <select
             id="position"
             name="applicationFor"
-            className="w-full px-3 py-2 border rounded-lg"
+            className=" text-xl w-full px-3 py-2 border border-yellow-600 h-16 rounded-lg"
             value={formData.applicationFor}
             onChange={handleChange}
             required
@@ -138,35 +149,32 @@ const CareerForm = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 mb-2" htmlFor="message">
+          <label className="block text-xl text-gray-700 mb-2" htmlFor="message">
             Message
           </label>
           <textarea
             id="message"
             name="message"
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full text-xl px-3 py-2 border border-yellow-600 h-36 rounded-lg"
             value={formData.message}
             onChange={handleChange}
             required
           ></textarea>
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 mb-2" htmlFor="resume">
+          <label className="block text-xl text-gray-700 mb-2" htmlFor="resume">
             Resume
           </label>
           <input
             type="file"
             id="resume"
             name="resume"
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full text-xl px-3 py-2 border border-yellow-600 h-16 rounded-lg"
             onChange={handleFileChange}
             required
           />
         </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
-        >
+        <button type="submit" className="contact-btn">
           Submit
         </button>
       </form>
