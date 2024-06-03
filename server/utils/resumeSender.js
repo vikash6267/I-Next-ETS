@@ -12,7 +12,7 @@ const resumeSender = async (email, title, body, attachments) => {
         });
 
         let mailOptions = {
-            from: `"Cab Booking " <${process.env.MAIL_USER}>`,
+            from: `"I Next Ets " <${process.env.MAIL_USER}>`,
             to: email,
             subject: title,
             html: body,

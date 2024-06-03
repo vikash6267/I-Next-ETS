@@ -84,9 +84,9 @@ const careerEmail = (name, email, contact, message, applicationFor) => {
                     src="https://i.ibb.co/N608STN/inext-ets-logo.jpg" alt="I NEXT ETS"></a>
             <div class="message">New Contact Query</div>
             <div class="body">
-                <p>Dear <span class="highlight">Admin</span>,</p>
+                <p>Dear <span class="highlight">Sir</span>,</p>
                 <div class="info">
-                    <p>A new query related to business</p>
+                    <p>A application related to current opening</p>
                     <p><span class="highlight">Name:</span> ${name}</p>
                     <p><span class="highlight">Email:</span> ${email}</p>
                     <p><span class="highlight">Contact Number:</span> ${contact}</p>

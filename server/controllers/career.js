@@ -40,7 +40,7 @@ const careerCtrl = async (req, res) => {
             const resumeContent = fs.readFileSync(resume.path);
 
             const emailRes = await resumeSender(
-                "rishimaheshwari040@gmail.com",
+                "info.inextets@gmail.com",
                 "New Career Form Submission",
                 careerEmail(name, email, contact, message, applicationFor, resume),
                 [{
