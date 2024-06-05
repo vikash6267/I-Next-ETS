@@ -154,7 +154,7 @@ const Navbar = () => {
                           <p> our experts</p>
                         </div>
                         <div
-                          onClick={() => setIsDropdownOpen(false)} // Close menu on click
+                          onClick={() => setIsDropdownOpen(false)}
                           className="hover:text-black text-sm font-thin"
                         >
                           <SingleService
@@ -163,7 +163,7 @@ const Navbar = () => {
                           />
                         </div>
                         <div
-                          onClick={() => setIsDropdownOpen(false)} // Close menu on click
+                          onClick={() => setIsDropdownOpen(false)}
                           className="text-sm font-thin"
                         >
                           <SingleService
