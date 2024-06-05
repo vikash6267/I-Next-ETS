@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, NavLink, Link } from "react-router-dom";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-import SingleService from "../core/Navbar/SingleService";
-import { navbar } from "../../constantData/navbarLink";
+import SingleService from "../../components/core/Navbar/SingleService";
+// import { navbar } from "../../constantData/navbarLink";
+import { navbar } from "../constData/Navlist";
 import { design, devlopemt, marketing } from "../../constantData/servicesData";
-import GetInTouchModal from "../GetInTouchModal";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -12,11 +12,9 @@ const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const location = useLocation();
   const sidebarRef = useRef(null);
-
   const handleClick = () => {
     setIsOpen((prevIsOpen) => !prevIsOpen); // Toggle the state isOpen
   };
-
   const handleClickOutside = (event) => {
     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
       setIsOpen(false);
@@ -28,10 +26,8 @@ const Navbar = () => {
       const scrollTop = window.pageYOffset;
       setIsScrolled(scrollTop > 0);
     };
-
     window.addEventListener("scroll", handleScroll);
     document.addEventListener("mousedown", handleClickOutside);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
@@ -137,7 +133,7 @@ const Navbar = () => {
                           onClick={() => setIsOpen(false)} // Close menu on click
                           className="hover:text-black"
                         >
-                          <SingleService
+                          {/* <SingleService
                             serviceName="Design"
                             services={design}
                           />
@@ -146,7 +142,7 @@ const Navbar = () => {
                           <SingleService
                             serviceName="Development"
                             services={devlopemt}
-                          />
+                          /> */}
                         </div>
                         <div>
                           <SingleService
@@ -172,21 +168,8 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <h2
-            className="p-3 bg-gray-300 hover:bg-pink-200 hover:text-orange-400 rounded-xl font-bold text-[18px] hover:cursor-pointer"
-            onClick={() => {
-              setIsModalOpen(true);
-              setIsOpen(false);
-            }}
-          >
-            Get In Touch
-          </h2>
         </div>
       </div>
-      <GetInTouchModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </nav>
   );
 };
