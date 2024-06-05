@@ -6,6 +6,7 @@ html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-image: url("https://cdn.dribbble.com/users/2156796/screenshots/19992280/media/7d2ee3a4d15d1f335419059066067694.gif");
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -272,4 +273,8 @@ body {
 #border {
   border-bottom: 2px dotted black;
   padding-bottom: 18px;
+}
+
+.hoverImg:hover {
+  background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHx8MA%3D%3D");
 }

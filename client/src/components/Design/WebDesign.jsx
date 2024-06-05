@@ -44,7 +44,7 @@ const WebDesign = () => {
 
           <div className="second">
             <img
-              src="./images/developer_male.jpg"
+              src="./images/developer_male-removebg-preview.png"
               alt="not found"
               className="animate-float"
             />
@@ -89,7 +89,7 @@ const WebDesign = () => {
         <Services />
 
         <p className="text-3xl lg:text-4xl mt-28 mb-14 font-bold">
-          Perks of hiring KrishaWeb for Web Design services
+          Perks of hiring I Next Ets for Web Design services
         </p>
 
         <div className="bg-gray-50 p-12 grid gap-6">

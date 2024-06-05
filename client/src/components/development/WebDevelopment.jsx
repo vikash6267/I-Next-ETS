@@ -3,34 +3,34 @@ import { IoIosArrowDropright } from "react-icons/io";
 import TrustedCompanies from "../TrustedCompanies";
 import { FaQuoteRight } from "react-icons/fa";
 import { hiringUx, uiUx } from "../cardData";
-// import Services from "./Services";
+// import Services from "../Design/Services";
 import Projects from "../tech/Projects";
 // import IndustryExpertise from "../IndustryExpertise";
 import Help from "../Help";
-// import UxServices from "./UxServices";
 import Feedback from "../Feedback";
-import ProductServices from "./ProductServices";
+import ProductServices from "../Design/ProductServices";
 
-const Products = () => {
+const WebDevelopment = () => {
   return (
     <>
       <div className="mt-[111px] w-11/12 mx-auto">
         <div className="flex gap-3">
           <p className="border-r-2 pr-3 text-gray-300 text-xl">Home</p>
-          <p className="text-xl">Brand Identity</p>
+          <p className="text-xl">Web Development</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2  items-center lg:-mt-20 mt-7 ">
           <div className="first ">
             <p className="text-2xl lg:text-4xl font-bold">
-              Defining the soul of your business through Brand Identity
+              One-stop solutions for all your Web Development needs!
             </p>
             <br />
 
             <p className="text-xl">
-              You deserve a brand that reflects your organization’s core culture
-              and values. KrishaWeb has a plan to make your company’s brand
-              unique and memorable to potential customers.
+              Delivering comprehensive, fully customized web development
+              solutions for crafting your web apps, websites, and e-commerce
+              stores. Ensure enhanced user experience for your users with I Next
+              Ets!
             </p>
             <br />
             <br />
@@ -49,6 +49,7 @@ const Products = () => {
             />
           </div>
         </div>
+        <Projects />
 
         <TrustedCompanies />
 
@@ -56,6 +57,31 @@ const Products = () => {
           <img src="./images/design/1.png" alt="not found" />
           <img src="./images/design/2.png" alt="" />
           <img src="./images/design/3.png" alt="" />
+        </div>
+
+        <div className="main grid lg:grid-cols-2 gap-10 my-20 ">
+          <div className="first grid border p-10 items-center justify-center gap-4 bg-gray-100 rounded-t-lg">
+            <img
+              src="https://www.krishaweb.com/wp-content/uploads/2023/05/Startups.svg"
+              alt=""
+            />
+            <p className="text-2xl font-bold text-center">Startups</p>
+            <p className="text-xl">
+              What you need to get there is what we’re all about. Ensuring your
+              business is a success through efficient business development.
+            </p>
+          </div>
+          <div className="second border grid items-center justify-center  gap-4 p-10 bg-gray-100 rounded-t-lg">
+            <img
+              src="https://www.krishaweb.com/wp-content/uploads/2023/05/Small-Business-1.svg"
+              alt=""
+            />
+            <p className="text-2xl font-bold text-center">Small businesses</p>
+            <p className="text-xl">
+              Our team delivers successful websites with multiple features
+              improving your productivity, vehicle for business expansion.
+            </p>
+          </div>
         </div>
 
         <br />
@@ -110,12 +136,10 @@ const Products = () => {
             </p>
           ))}
         </div>
-
-        <Projects />
       </div>
       <Help />
     </>
   );
 };
 
-export default Products;
+export default WebDevelopment;

@@ -3,7 +3,6 @@ import { IoIosArrowDropright } from "react-icons/io";
 import TrustedCompanies from "../TrustedCompanies";
 import { FaQuoteRight } from "react-icons/fa";
 import { hiringUx, uiUx } from "../cardData";
-import Services from "./Services";
 import Projects from "../tech/Projects";
 import IndustryExpertise from "../IndustryExpertise";
 import Help from "../Help";
@@ -41,7 +40,7 @@ const UIUX = () => {
 
           <div className="second">
             <img
-              src="./images/developer_male.jpg"
+              src="./images/developer_male-removebg-preview.png"
               alt="not found"
               className="animate-float"
             />
@@ -93,7 +92,7 @@ const UIUX = () => {
         <UxServices />
 
         <p className="text-3xl lg:text-4xl mt-28 mb-14 font-bold">
-          Unlock your business’s full potential with KrishaWeb
+          Unlock your business’s full potential with I Next Ets
         </p>
 
         <div className="bg-gray-50 p-12 grid gap-6">
