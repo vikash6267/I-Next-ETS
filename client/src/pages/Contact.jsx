@@ -18,7 +18,7 @@ const Contact = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
-    console.log(formData);
+    // console.log(formData);
   };
 
   const handleSubmit = async (e) => {
@@ -44,7 +44,7 @@ const Contact = () => {
           text: "Your message has been sent successfully!",
           icon: "success",
         });
-        console.log(response.data);
+        // console.log(response.data);
       }
       setFormData({ name: "", email: "", contact: "", message: "" });
     } catch (error) {

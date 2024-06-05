@@ -19,7 +19,7 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
       ...formData,
       [e.target.name]: e.target.value,
     });
-    console.log(formData);
+    // console.log(formData);
   };
 
   const handleSubmit = async (e) => {
@@ -54,17 +54,17 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
       //   formData
       // );
 
-      const collectionRef = collection(db , "touchData") ; 
-      const newData =  await addDoc (collectionRef , formData) ; 
+      const collectionRef = collection(db, "touchData");
+      const newData = await addDoc(collectionRef, formData);
       // if (response?.data) {
-        Swal.fire({
-          title: "Good job!",
-          text: "Your message has been sent successfully!",
-          icon: "success",
-        });
+      Swal.fire({
+        title: "Good job!",
+        text: "Your message has been sent successfully!",
+        icon: "success",
+      });
 
-        onClose();
-        // console.log(response.data);
+      onClose();
+      // console.log(response.data);
       // }
       setFormData({ name: "", email: "", contact: "", message: "" });
     } catch (error) {
@@ -145,4 +145,3 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
 };
 
 export default GetInTouchModal;
- 

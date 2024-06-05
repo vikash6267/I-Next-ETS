@@ -506,3 +506,129 @@ export const uxServices = [
         desc: "Helping businesses turn their ideas into reality. They offer support in areas like user research, design, prototyping, and manufacturing so that businesses can create and launch successful new products. Through product design, you can tap into specialized expertise and bring innovative products to market with ease."
     },
 ]
+
+export const seo = [
+    {
+        id: 1,
+        title: "You observe uncertainty in SEO approach."
+    },
+    {
+        id: 2,
+        title: "You are stressed about the cost and desired ROI."
+    },
+    {
+        id: 3,
+        title: "Your previous agency was unclear of the SEO strategy."
+    },
+    {
+        id: 4,
+        title: "You are facing challenges in measuring and reporting results."
+    },
+    {
+        id: 5,
+        title: "You observed decreased visibility due to insufficient SEO."
+    },
+    {
+        id: 6,
+        title: "You faced challenges to reach your target audience resulting in subpar results."
+    },
+    {
+        id: 7,
+        title: " You have experienced poor SEO practices hindering your business lack performance."
+    },
+    {
+        id: 8,
+        title: "You failed to invest in SEO and it resulted in missed opportunities to compete in the digital market."
+    },
+]
+export const paiadvertising = [
+    {
+        id: 1,
+        title: "You have limited expertise with paid advertising leading to little ROI."
+    },
+    {
+        id: 2,
+        title: "You have a limited budget for paid ads to outstand market leaders."
+    },
+    {
+        id: 3,
+        title: "Facing challenges in targeting your ideal audience."
+    },
+    {
+        id: 4,
+        title: "Your business is facing issues in creating effective ad copy."
+    },
+    {
+        id: 5,
+        title: "You are facing challenges in tracking and measuring the performance."
+    },
+
+]
+export const contentMarketing = [
+    {
+        id: 1,
+        title: "Lack of time to develop a content marketing strategy or create content."
+    },
+    {
+        id: 2,
+        title: "Facing difficulties creating content that is engaging and resonates with their target audience."
+    },
+    {
+        id: 3,
+        title: "Unable to measure the effectiveness of their content marketing efforts."
+    },
+    {
+        id: 4,
+        title: "Limited budget for content creation and promotion."
+    },
+    {
+        id: 5,
+        title: "Difficulty staying up-to-date with the latest trends and best practices in content marketing."
+    },
+    {
+        id: 6,
+        title: "Frustration with a lack of tangible results from their current content marketing efforts."
+    },
+
+]
+
+export const service = [
+    {
+        id: 1,
+        title: "Landing Page Development",
+        desc: "A Landing Page development is a single-page application that showcases your personal or professional work. It's designed to provide visitors with a quick overview of your skills.",
+        img: "https://diffco.us/wp-content/themes/diffconew/static-template/build/images/about-us-v4/s-3.svg"
+
+    },
+    {
+        id: 2,
+        title: "WordPress Development",
+        desc: "WordPress Development involves creating websites and web applications using the WordPress platform. WordPress is a highly popular content management system (CMS) known for its flexibility applications.",
+        img: "https://diffco.us/wp-content/themes/diffconew/static-template/build/images/about-us-v4/s-1.svg"
+    },
+    {
+        id: 3,
+        title: "Full Stack Development",
+        desc: "Full Stack Development Services provide comprehensive solutions for building robust, scalable, and efficient web applications. As a full stack developer, I offer expertise in both front-end and back-end development, ensuring seamless integration and optimal performance across the entire application.",
+        img: "https://diffco.us/wp-content/themes/diffconew/static-template/build/images/about-us-v4/s-2.svg"
+    },
+    {
+        id: 4,
+        title: "Application Development",
+        desc: "Application Development Services offer tailored solutions for creating high-quality, efficient, and user-friendly applications for various platforms, including web, mobile, and desktop. As an experienced application developere.",
+        img: "https://diffco.us/wp-content/themes/diffconew/static-template/build/images/about-us-v4/s-4.svg"
+    },
+    {
+        id: 5,
+        title: "SEO ",
+        desc: "SEO Services are designed to enhance your website’s visibility on search engines, driving organic traffic and increasing your online presence. As an experienced SEO specialist, I provide comprehensive SEO strategies tailored to your business goals.",
+        img: "https://diffco.us/wp-content/themes/diffconew/static-template/build/images/about-us-v4/s-1.svg"
+    },
+    {
+        id: 6,
+        title: "Paid Advertising",
+        desc: "Paid Advertising Services offer targeted and efficient solutions to drive traffic, increase brand awareness, and boost conversions through strategic online ad campaigns. As a seasoned digital marketing specialist.",
+        img: "https://diffco.us/wp-content/themes/diffconew/static-template/build/images/about-us-v4/s-6.svg"
+    },
+
+]

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function SingleService({ services, services2 = false, serviceName }) {
   useEffect(() => {
-    console.log(services);
+    // console.log(services);
   });
   return (
     <div>

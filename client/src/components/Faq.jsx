@@ -30,7 +30,7 @@ const Faq = () => {
             <div className="flex items-center mb-4 lg:gap-5">
               <button
                 onClick={() => handleClick(index)}
-                className="mr-2 px-4 py-2 border border-gray-400 text-black rounded-full flex items-center justify-center w-12 h-12 transition-colors duration-300 text-2xl"
+                className="mr-2 px-4 py-2 border border-gray-400 text-black rounded-full flex items-center justify-center w-12 h-12 transition-all duration-1000 text-2xl"
               >
                 <span className="text-2xl">
                   {faqState[index] ? <RxCross2 /> : <IoAddOutline />}
@@ -40,7 +40,7 @@ const Faq = () => {
             </div>
             <div
               className={`px-[60px] lg:px-[75px] my-5 text-lg ${
-                faqState[index] ? "" : "hidden"
+                faqState[index] ? "" : "hidden "
               }`}
             >
               <p>{currElem.desc}</p>
