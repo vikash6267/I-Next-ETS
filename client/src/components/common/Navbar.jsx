@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useLocation, NavLink, Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import SingleService from "../core/Navbar/SingleService";
 import { navbar } from "../../constantData/navbarLink";
@@ -10,7 +10,9 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const location = useLocation();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  // const location = useLocation();
   const sidebarRef = useRef(null);
 
   const handleClick = () => {
@@ -72,7 +74,13 @@ const Navbar = () => {
           </button>
 
           <Link to="/" className="font-bold text-black text-2xl">
-            I-Next-ETS
+            <img
+              src="https://i.ibb.co/N608STN/inext-ets-logo.jpg"
+              width={65}
+              height={28}
+              style={{ borderRadius: "20px" }}
+              alt=""
+            />
           </Link>
         </div>
 
@@ -120,35 +128,53 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex gap-3 items-center">
-          <ul className="flex gap-x-6 text-xl font-bold hover:cursor-pointer">
+          <ul className="flex gap-x-6 text-sm font-bold hover:cursor-pointer">
             {navbar.map((link, index) => (
               <li key={index}>
                 {link.title === "Services" ? (
-                  <div className="group flex cursor-pointer items-center gap-1 relative">
+                  <div
+                    className="group flex cursor-pointer items-center gap-1 relative"
+                    onMouseEnter={() => setIsDropdownOpen(true)}
+                    onMouseLeave={() => setIsDropdownOpen(false)}
+                  >
                     <p className="hover:text-orange-500">{link.title}</p>
                     <IoIosArrowDropdownCircle />
 
-                    <div className="invisible absolute top-[50%] z-[1000] flex min-w-[95vw] left-[100%] translate-x-[-40%] flex-col rounded-lg bg-white border p-4 opacity-0 transition-all duration-150 group-hover:visible group-hover:translate-y-[1.65em] group-hover:opacity-100">
-                      <div className="grid grid-cols-4 mt-6 text-xl w-11/12 mx-auto">
-                        <div className="font-bold text-3xl leading-snug ">
-                          Drive your digital success with our experts
+                    <div
+                      className={`absolute top-[50%] z-[1000] flex min-w-[95vw] left-[100%] translate-x-[-55%] flex-col rounded-lg bg-white border p-4 transition-all duration-150 ${
+                        isDropdownOpen
+                          ? "visible translate-y-[1.65em] opacity-100"
+                          : "invisible opacity-0"
+                      }`}
+                    >
+                      <div className="grid grid-cols-4 gap-16 text-xl w-11/12 mx-auto">
+                        <div className="font-bold text-xl leading-snug">
+                          Drive your digital
+                          <p>success with</p>
+                          <p> our experts</p>
                         </div>
                         <div
-                          onClick={() => setIsOpen(false)} // Close menu on click
-                          className="hover:text-black"
+                          onClick={() => setIsDropdownOpen(false)} // Close menu on click
+                          className="hover:text-black text-sm font-thin"
                         >
                           <SingleService
                             serviceName="Design"
                             services={design}
                           />
                         </div>
-                        <div>
+                        <div
+                          onClick={() => setIsDropdownOpen(false)} // Close menu on click
+                          className="text-sm font-thin"
+                        >
                           <SingleService
                             serviceName="Development"
                             services={devlopemt}
                           />
                         </div>
-                        <div>
+                        <div
+                          onClick={() => setIsDropdownOpen(false)} // Close menu on click
+                          className="text-sm font-thin"
+                        >
                           <SingleService
                             serviceName="Marketing"
                             services={marketing}
@@ -174,7 +200,7 @@ const Navbar = () => {
           </ul>
 
           <h2
-            className="p-3 bg-gray-300 hover:bg-pink-200 hover:text-orange-400 rounded-xl font-bold text-[18px] hover:cursor-pointer"
+            className="p-3 bg-gray-300 hover:bg-pink-200 hover:text-orange-400 rounded-xl font-bold text-[12px] hover:cursor-pointer"
             onClick={() => {
               setIsModalOpen(true);
               setIsOpen(false);

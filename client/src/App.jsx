@@ -20,6 +20,8 @@ import UIUX from "./components/Design/UIUX";
 import Products from "./components/Design/Products";
 import Brands from "./components/Design/Brands";
 import MobileUIUX from "./components/Design/MobileUIUX";
+import WebDevelopment from "./components/development/WebDevelopment";
+import WebAppDevelopment from "./components/development/WebAppDevelopment";
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -30,16 +32,14 @@ function App() {
       setLoading(false);
     }, 2000);
 
-    // Clean up the timer
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="flex min-h-screen w-screen flex-col  ">
-      {loading ? ( // Render the loader if loading is true
+      {loading ? (
         <Loader />
       ) : (
-        // Render the content once loading is false
         <>
           <Navbar />
           <Routes>
@@ -49,12 +49,19 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/workinfo" element={<HowWeWork />} />
             <Route path="/portfolio" element={<PortFolio />} />
+            <Route path="/career" element={<Career />} />
             {/* services  */}
+            {/* design  */}
             <Route path="/webdesign" element={<WebDesign />} />
             <Route path="/uiuxdesign" element={<UIUX />} />
             <Route path="/productdesign" element={<Products />} />
             <Route path="/brandidentity" element={<Brands />} />
             <Route path="/mobile" element={<MobileUIUX />} />
+
+            {/* development  */}
+            <Route path="/webDevelopment" element={<WebDevelopment />} />
+            <Route path="/webAppDevelopment" element={<WebAppDevelopment />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
 

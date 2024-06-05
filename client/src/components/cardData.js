@@ -181,8 +181,8 @@ export const marketing = [
 export const feedbacks = [
     {
         id: 1,
-        desc: "Everyone we worked with at KrishaWeb was exceptionally friendly and very knowledgeable.",
-        name: "Karissa",
+        desc: "Everyone we worked with at I Next Ets was exceptionally friendly and very knowledgeable.",
+        name: "I next ets",
         title: "Business Analyst, Financial Services Company"
     },
     {
@@ -193,13 +193,13 @@ export const feedbacks = [
     },
     {
         id: 3,
-        desc: "The team at KrishaWeb is dedicated and professional, always delivering on time.",
+        desc: "The team at I Next Ets is dedicated and professional, always delivering on time.",
         name: "Michael",
         title: "CEO, Tech Startup"
     },
     {
         id: 4,
-        desc: "KrishaWeb's expertise in digital marketing has significantly boosted our online presence.",
+        desc: "I Next Ets expertise in digital marketing has significantly boosted our online presence.",
         name: "Sarah",
         title: "Marketing Director, Retail Company"
     },
@@ -365,7 +365,7 @@ export const services = [
     {
         id: 2,
         title: "Responsive Design",
-        desc: "Your business requires a highly responsive website to earn a positive response from your users. KrishaWeb expert design team ensures your website is accessible on all devices and delivers a seamless experience for your users."
+        desc: "Your business requires a highly responsive website to earn a positive response from your users. I Next Ets expert design team ensures your website is accessible on all devices and delivers a seamless experience for your users."
     },
     {
         id: 3,
@@ -380,7 +380,7 @@ export const services = [
     {
         id: 5,
         title: "Website Redesign",
-        desc: "You know how frustrating it can be to come across an outdated website. We hate it too. KrishaWeb’s experienced team is dedicated to providing customized redesign solutions to kickstart your business and help you land more clients. We have the skills and expertise to deliver the results you’re looking for."
+        desc: "You know how frustrating it can be to come across an outdated website. We hate it too.I Next Ets experienced team is dedicated to providing customized redesign solutions to kickstart your business and help you land more clients. We have the skills and expertise to deliver the results you’re looking for."
     },
     {
         id: 6,
@@ -424,6 +424,40 @@ export const uiUx = [
     },
 ]
 
+export const serviceProducts = [
+    {
+        id: 1,
+        title: "User research and analysis",
+        desc: "As part of our research process, our team will analyze the behavior and activities of users and identify their primary pain points. This information can subsequently be utilized in the development of the product."
+
+    },
+    {
+        id: 2,
+        title: "Brand identity design",
+        desc: "Creating a brand originality that is instantly recognizable and professional, while also aligning with its identity."
+    },
+    {
+        id: 3,
+        title: "User interface design",
+        desc: "We understand how important it is to have a user-friendly interface for the success of any product. That’s why we help to create a user-friendly interface that is simple and easy to navigate."
+    },
+    {
+        id: 4,
+        title: "Packaging design",
+        desc: "Acknowledging the impact of packaging on the success of your products, our team prioritizes a package design that balances both functional and aesthetic elements."
+    },
+    {
+        id: 5,
+        title: "User experience design",
+        desc: "A good user experience happens when users can easily understand and choose what they want. User experience design helps to make this process easier and more effortless for them."
+    },
+    {
+        id: 6,
+        title: "Production design",
+        desc: "We know how stressful it can be to update your production design. Recognizing the significance of your product design, our experts commit to delivering the outcomes that you require and deserve."
+    },
+
+]
 export const uxServices = [
     {
         id: 1,
@@ -434,7 +468,7 @@ export const uxServices = [
     {
         id: 2,
         title: "User Interface Design",
-        desc: "Your business requires a highly responsive website to earn a positive response from your users. KrishaWeb expert design team ensures your website is accessible on all devices and delivers a seamless experience for your users."
+        desc: "Your business requires a highly responsive website to earn a positive response from your users. I Next Ets expert design team ensures your website is accessible on all devices and delivers a seamless experience for your users."
     },
     {
         id: 3,
@@ -449,7 +483,7 @@ export const uxServices = [
     {
         id: 5,
         title: "UI/UX Consulting",
-        desc: "You know how frustrating it can be to come across an outdated website. We hate it too. KrishaWeb’s experienced team is dedicated to providing customized redesign solutions to kickstart your business and help you land more clients. We have the skills and expertise to deliver the results you’re looking for."
+        desc: "You know how frustrating it can be to come across an outdated website. We hate it too. I Next Ets experienced team is dedicated to providing customized redesign solutions to kickstart your business and help you land more clients. We have the skills and expertise to deliver the results you’re looking for."
     },
     {
         id: 6,

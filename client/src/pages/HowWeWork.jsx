@@ -81,7 +81,7 @@ const HowWeWork = () => {
 
           <div className="second">
             <img
-              src="./images/developer_male.jpg"
+              src="./images/developer_male-removebg-preview.png"
               alt="not found"
               className="animate-float"
             />

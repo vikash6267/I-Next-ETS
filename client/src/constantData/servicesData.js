@@ -33,12 +33,12 @@ export const devlopemt = [
     {
         id: 1,
         title: "Web Developement",
-        path: "/webdev"
+        path: "/webDevelopment"
     },
     {
         id: 2,
         title: "Web App Developement",
-        path: "/webappdev"
+        path: "/webAppDevelopment"
     },
     {
         id: 3,
