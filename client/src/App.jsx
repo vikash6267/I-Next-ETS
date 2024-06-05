@@ -60,8 +60,7 @@ function App() {
                 <Route path="/workinfo" element={<HowWeWork />} />
                 <Route path="/portfolio" element={<PortFolio />} />
                 <Route path="/career" element={<Career />} />
-
-          <Navbar />
+        
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/prework" element={<WorkDone />} />
@@ -113,5 +112,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
