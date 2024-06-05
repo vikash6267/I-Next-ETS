@@ -17,18 +17,16 @@ const Home = () => {
         text: "You are successfully Logged out !",
         icon: "success",
       });
-
-     
     } catch (error) {
-        Swal.fire({
-            title: "Error!",
-            text: "There is some Error in Logging out ",
-            icon: "error",
-          });
+      Swal.fire({
+        title: "Error!",
+        text: "There is some Error in Logging out ",
+        icon: "error",
+      });
     }
   };
   return (
-    <div>
+    <div className="mt-[87px] w-11/12 mx-auto">
       This is Home Page of Admin
       <button
         onClick={handleLogOut}
