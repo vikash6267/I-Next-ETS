@@ -1,24 +1,20 @@
 import React, { useState, useEffect, useRef } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { useLocation, NavLink, Link } from "react-router-dom";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-import SingleService from "../core/Navbar/SingleService";
-import { navbar } from "../../constantData/navbarLink";
+import SingleService from "../../components/core/Navbar/SingleService";
+// import { navbar } from "../../constantData/navbarLink";
+import { navbar } from "../constData/Navlist";
 import { design, devlopemt, marketing } from "../../constantData/servicesData";
-import GetInTouchModal from "../GetInTouchModal";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  // const location = useLocation();
+  const location = useLocation();
   const sidebarRef = useRef(null);
-
   const handleClick = () => {
     setIsOpen((prevIsOpen) => !prevIsOpen); // Toggle the state isOpen
   };
-
   const handleClickOutside = (event) => {
     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
       setIsOpen(false);
@@ -30,10 +26,8 @@ const Navbar = () => {
       const scrollTop = window.pageYOffset;
       setIsScrolled(scrollTop > 0);
     };
-
     window.addEventListener("scroll", handleScroll);
     document.addEventListener("mousedown", handleClickOutside);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
@@ -74,13 +68,7 @@ const Navbar = () => {
           </button>
 
           <Link to="/" className="font-bold text-black text-2xl">
-            <img
-              src="https://i.ibb.co/N608STN/inext-ets-logo.jpg"
-              width={65}
-              height={28}
-              style={{ borderRadius: "20px" }}
-              alt=""
-            />
+            I-Next-ETS
           </Link>
         </div>
 
@@ -128,53 +116,35 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex gap-3 items-center">
-          <ul className="flex gap-x-6 text-sm font-bold hover:cursor-pointer">
+          <ul className="flex gap-x-6 text-xl font-bold hover:cursor-pointer">
             {navbar.map((link, index) => (
               <li key={index}>
                 {link.title === "Services" ? (
-                  <div
-                    className="group flex cursor-pointer items-center gap-1 relative"
-                    onMouseEnter={() => setIsDropdownOpen(true)}
-                    onMouseLeave={() => setIsDropdownOpen(false)}
-                  >
+                  <div className="group flex cursor-pointer items-center gap-1 relative">
                     <p className="hover:text-orange-500">{link.title}</p>
                     <IoIosArrowDropdownCircle />
 
-                    <div
-                      className={`absolute top-[50%] z-[1000] flex min-w-[95vw] left-[100%] translate-x-[-55%] flex-col rounded-lg bg-white border p-4 transition-all duration-150 ${
-                        isDropdownOpen
-                          ? "visible translate-y-[1.65em] opacity-100"
-                          : "invisible opacity-0"
-                      }`}
-                    >
-                      <div className="grid grid-cols-4 gap-16 text-xl w-11/12 mx-auto">
-                        <div className="font-bold text-xl leading-snug">
-                          Drive your digital
-                          <p>success with</p>
-                          <p> our experts</p>
+                    <div className="invisible absolute top-[50%] z-[1000] flex min-w-[95vw] left-[100%] translate-x-[-40%] flex-col rounded-lg bg-white border p-4 opacity-0 transition-all duration-150 group-hover:visible group-hover:translate-y-[1.65em] group-hover:opacity-100">
+                      <div className="grid grid-cols-4 mt-6 text-xl w-11/12 mx-auto">
+                        <div className="font-bold text-3xl leading-snug ">
+                          Drive your digital success with our experts
                         </div>
                         <div
-                          onClick={() => setIsDropdownOpen(false)}
-                          className="hover:text-black text-sm font-thin"
+                          onClick={() => setIsOpen(false)} // Close menu on click
+                          className="hover:text-black"
                         >
-                          <SingleService
+                          {/* <SingleService
                             serviceName="Design"
                             services={design}
                           />
                         </div>
-                        <div
-                          onClick={() => setIsDropdownOpen(false)}
-                          className="text-sm font-thin"
-                        >
+                        <div>
                           <SingleService
                             serviceName="Development"
                             services={devlopemt}
-                          />
+                          /> */}
                         </div>
-                        <div
-                          onClick={() => setIsDropdownOpen(false)} // Close menu on click
-                          className="text-sm font-thin"
-                        >
+                        <div>
                           <SingleService
                             serviceName="Marketing"
                             services={marketing}
@@ -198,21 +168,8 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <h2
-            className="p-3 bg-gray-300 hover:bg-pink-200 hover:text-orange-400 rounded-xl font-bold text-[12px] hover:cursor-pointer"
-            onClick={() => {
-              setIsModalOpen(true);
-              setIsOpen(false);
-            }}
-          >
-            Get In Touch
-          </h2>
         </div>
       </div>
-      <GetInTouchModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </nav>
   );
 };

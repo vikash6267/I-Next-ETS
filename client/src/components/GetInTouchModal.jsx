@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../firebase.config";
 
 const GetInTouchModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -47,12 +49,14 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
     });
 
     try {
-      const response = await axios.post(
-        "http://localhost:8080/api/v1/user/contact",
-        formData
-      );
+      // const response = await axios.post(
+      //   "http://localhost:8080/api/v1/user/contact",
+      //   formData
+      // );
 
-      if (response?.data) {
+      const collectionRef = collection(db , "touchData") ; 
+      const newData =  await addDoc (collectionRef , formData) ; 
+      // if (response?.data) {
         Swal.fire({
           title: "Good job!",
           text: "Your message has been sent successfully!",
@@ -60,8 +64,8 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
         });
 
         onClose();
-        console.log(response.data);
-      }
+        // console.log(response.data);
+      // }
       setFormData({ name: "", email: "", contact: "", message: "" });
     } catch (error) {
       console.log(error);
@@ -141,3 +145,4 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
 };
 
 export default GetInTouchModal;
+ 
