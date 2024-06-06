@@ -34,7 +34,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/user/contact",
+        "https://i-next-ets.onrender.com/api/v1/user/contact",
         formData
       );
 

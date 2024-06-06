@@ -42,7 +42,7 @@ const CareerForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/user/career",
+        "https://i-next-ets.onrender.com/api/v1/user/career",
         data,
         {
           headers: {
