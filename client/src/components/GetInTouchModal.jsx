@@ -38,7 +38,6 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
       });
       return;
     }
-
     Swal.fire({
       title: "Loading...",
       text: "Please wait while we process your request.",
