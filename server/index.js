@@ -18,6 +18,12 @@ app.use(express.json());
 app.use(cors());
 
 // route 
+app.get("/", (req, res) => {
+    res.json({
+        success: true,
+        message: "Ha bhai chal rha hu!"
+    })
+})
 app.use("/api/v1/user", require("./routes/contactRoute"));
 
 const PORT = process.env.PORT || 8080;

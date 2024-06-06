@@ -79,19 +79,19 @@ const careerEmail = (name, email, contact, message, applicationFor) => {
     </head>
     
     <body>
-        <div class="container">
-            <a href="http://localhost:5173"><img class="logo"
+        <div className="container">
+            <a href="http://localhost:5173"><img className="logo"
                     src="https://i.ibb.co/N608STN/inext-ets-logo.jpg" alt="I NEXT ETS"></a>
-            <div class="message">New Contact Query</div>
-            <div class="body">
-                <p>Dear <span class="highlight">Sir</span>,</p>
-                <div class="info">
+            <div className="message">New Contact Query</div>
+            <div className="body">
+                <p>Dear <span className="highlight">Sir</span>,</p>
+                <div className="info">
                     <p>A application related to current opening</p>
-                    <p><span class="highlight">Name:</span> ${name}</p>
-                    <p><span class="highlight">Email:</span> ${email}</p>
-                    <p><span class="highlight">Contact Number:</span> ${contact}</p>
-                    <p><span class="highlight">Message:</span> ${message}</p>
-                    <p><span class="highlight">Application For :</span> ${applicationFor}</p>
+                    <p><span className="highlight">Name:</span> ${name}</p>
+                    <p><span className="highlight">Email:</span> ${email}</p>
+                    <p><span className="highlight">Contact Number:</span> ${contact}</p>
+                    <p><span className="highlight">Message:</span> ${message}</p>
+                    <p><span className="highlight">Application For :</span> ${applicationFor}</p>
                 </div>
             </div>
         </div>
@@ -103,5 +103,5 @@ const careerEmail = (name, email, contact, message, applicationFor) => {
 
 module.exports = { careerEmail };
 
-{/* <p><span class="highlight">Resume:</span> ${resume.originalname}</p> */ }
+{/* <p><span className="highlight">Resume:</span> ${resume.originalname}</p> */ }
 
