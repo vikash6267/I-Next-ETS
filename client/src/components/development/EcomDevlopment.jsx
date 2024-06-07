@@ -1,35 +1,34 @@
 import React from "react";
 import { IoIosArrowDropright } from "react-icons/io";
 import TrustedCompanies from "../TrustedCompanies";
-import { FaQuoteRight } from "react-icons/fa";
-import { hiringUx, uiUx } from "../cardData";
+
 import Projects from "../tech/Projects";
 import Help from "../Help";
 import Feedback from "../Feedback";
-import ProductServices from "../Design/ProductServices";
+import Technology from "../Technology";
 
-const WebAppDevelopment = () => {
+const EcomDevlopment = () => {
   return (
     <>
       <div className="mt-[111px] w-11/12 mx-auto">
         <div className="flex gap-3">
           <p className="border-r-2 pr-3 text-gray-300 text-xl">Home</p>
-          <p className="text-xl">Enterprise Application Development</p>
+          <p className="text-xl">eCommerce Development</p>
         </div>
-        <br />
-        <br />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20  items-center lg:-mt-20 mt-7 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24 items-center lg:mt-14 mt-7 ">
           <div className="first ">
             <p className="text-2xl lg:text-4xl font-bold">
-              Enterprise Web Application Development Solutions
+              Enterprise Ecommerce Consulting and Development Solutions
             </p>
             <br />
 
             <p className="text-xl">
-              Is your business struggling with application development barriers?
-              Our robust enterprise application development ensures developing
-              an application that meets your current and future goals.
+              I Next ETS understands your business needs and offers tailored
+              solutions for your eCommerce store with attractive visual design,
+              feature-rich functionalities, and rivalry customer experience.
+              Build your store in diverse technologies like Magento,
+              WooCommerce, and Shopify maximizing desired outcomes.
             </p>
             <br />
             <br />
@@ -48,9 +47,10 @@ const WebAppDevelopment = () => {
             />
           </div>
         </div>
-        <Projects />
+        <Technology />
         <br />
-        <TrustedCompanies />
+        <br />
+        <br />
 
         <div className="main grid grid-cols-1 lg:grid-cols-2 items-center">
           <div className="first">
@@ -71,11 +71,15 @@ const WebAppDevelopment = () => {
           </div>
           <div className="second">
             <img
-              src="https://d1hdtc0tbqeghx.cloudfront.net/wp-content/uploads/2023/06/22063315/Enterprise-Application-Development.png"
+              src="https://d1hdtc0tbqeghx.cloudfront.net/wp-content/uploads/2023/05/22063328/E-commerce-Development-1.png"
               alt=""
             />
           </div>
         </div>
+        <Projects />
+
+        <TrustedCompanies />
+
         <Feedback />
       </div>
       <Help />
@@ -83,4 +87,4 @@ const WebAppDevelopment = () => {
   );
 };
 
-export default WebAppDevelopment;
+export default EcomDevlopment;

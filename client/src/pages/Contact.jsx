@@ -18,7 +18,7 @@ const Contact = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
-    console.log(formData);
+    // console.log(formData);
   };
 
   const handleSubmit = async (e) => {
@@ -34,7 +34,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/user/contact",
+        "https://i-next-ets.onrender.com/api/v1/user/contact",
         formData
       );
 
@@ -44,7 +44,7 @@ const Contact = () => {
           text: "Your message has been sent successfully!",
           icon: "success",
         });
-        console.log(response.data);
+        // console.log(response.data);
       }
       setFormData({ name: "", email: "", contact: "", message: "" });
     } catch (error) {

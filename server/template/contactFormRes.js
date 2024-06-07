@@ -84,18 +84,18 @@ const contactUsEmail = (
     </head>
     
     <body>
-        <div class="container">
-            <a href="http://localhost:5173"><img class="logo"
+        <div className="container">
+            <a href="http://localhost:5173"><img className="logo"
                     src="https://i.ibb.co/N608STN/inext-ets-logo.jpg" alt="I NEXT ETS"></a>
-            <div class="message">New Contact Query</div>
-            <div class="body">
-                <p>Dear <span class="highlight">Admin</span>,</p>
-                <div class="info">
+            <div className="message">New Contact Query</div>
+            <div className="body">
+                <p>Dear <span className="highlight">Admin</span>,</p>
+                <div className="info">
                     <p>A new query related to business</p>
-                    <p><span class="highlight">Name:</span> ${name}</p>
-                    <p><span class="highlight">Email:</span> ${email}</p>
-                    <p><span class="highlight">Contact Number:</span> ${contact}</p>
-                    <p><span class="highlight">Message:</span> ${message}</p>
+                    <p><span className="highlight">Name:</span> ${name}</p>
+                    <p><span className="highlight">Email:</span> ${email}</p>
+                    <p><span className="highlight">Contact Number:</span> ${contact}</p>
+                    <p><span className="highlight">Message:</span> ${message}</p>
                     
                 </div>
             </div>

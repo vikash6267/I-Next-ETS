@@ -26,11 +26,7 @@ export const navbar = [
         title: "Contact US",
         path: "/contact"
     },
-    {
-         id:8 , 
-         title:"Admin",
-         path:"/login"
-    },
+
     {
         id: 6,
         title: "PortFolio",

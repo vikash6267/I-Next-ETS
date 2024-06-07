@@ -3,11 +3,8 @@ import { IoIosArrowDropright } from "react-icons/io";
 import TrustedCompanies from "../TrustedCompanies";
 import { FaQuoteRight } from "react-icons/fa";
 import { hiringUx, uiUx } from "../cardData";
-// import Services from "./Services";
 import Projects from "../tech/Projects";
-// import IndustryExpertise from "../IndustryExpertise";
 import Help from "../Help";
-// import UxServices from "./UxServices";
 import Feedback from "../Feedback";
 import ProductServices from "./ProductServices";
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import image from "../images/hero.png";
 import { TypeAnimation } from "react-type-animation";
 import { RiComputerLine } from "react-icons/ri";

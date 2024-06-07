@@ -75,6 +75,7 @@ const Navbar = () => {
 
           <Link to="/" className="font-bold text-black text-2xl">
             <img
+              className="hidden md:block lg:block"
               src="https://i.ibb.co/N608STN/inext-ets-logo.jpg"
               width={65}
               height={28}

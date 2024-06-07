@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./App.css";
-import Mode from "./components/Mode";
 import Navbar from "./components/common/Navbar";
 import CustomPointer from "./components/common/Pointer";
 import Footer from "./components/common/footer/Footer";
@@ -34,6 +33,18 @@ import CreateEmployee from "./admin/components/CreateEmployee";
 import Employee_login from "./components/Employee_login";
 import { employee } from "./context/employee";
 import EmployeeHome from "./employee/EmployeeHome";
+import Header from "./admin/components/Header";
+import Service from "./pages/Service";
+import CMSDevelopment from "./components/development/CMSDevelopment";
+import EcomDevlopment from "./components/development/EcomDevlopment";
+import ScrollToTop from "./components/ScrollToTop";
+import SoftwareDevelopment from "./components/development/SoftwareDevelopment";
+import Inbound from "./components/marketing/Inbound";
+import SeoMarketing from "./components/marketing/SeoMarketing";
+import SocialMedia from "./components/marketing/SocialMedia";
+import PaidAdvertising from "./components/marketing/PaidAdvertising";
+import ContantMarketing from "./components/marketing/ContantMarketing";
+
 function App() {
   const [toggle, setToggle] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -63,6 +74,7 @@ function App() {
                 <Route path="/workinfo" element={<HowWeWork />} />
                 <Route path="/portfolio" element={<PortFolio />} />
                 <Route path="/career" element={<Career />} />
+                <Route path="/service" element={<Service />} />
                 {/* Services */}
                 {/* Design */}
                 <Route path="/webdesign" element={<WebDesign />} />
@@ -70,6 +82,7 @@ function App() {
                 <Route path="/productdesign" element={<Products />} />
                 <Route path="/brandidentity" element={<Brands />} />
                 <Route path="/mobile" element={<MobileUIUX />} />
+
                 {/* Development */}
                 <Route path="/webDevelopment" element={<WebDevelopment />} />
                 <Route
@@ -77,11 +90,27 @@ function App() {
                   element={<WebAppDevelopment />}
                 />
                 <Route path="/employee_login" element={<Employee_login />} />
+
+                <Route path="/cmsdev" element={<CMSDevelopment />} />
+                <Route path="/ecomdev" element={<EcomDevlopment />} />
+                <Route path="/softwaredev" element={<SoftwareDevelopment />} />
+
+                {/* marketing  */}
+                <Route path="/inboudmarket" element={<Inbound />} />
+                <Route path="/seomarket" element={<SeoMarketing />} />
+                <Route path="/socialmarket" element={<SocialMedia />} />
+                <Route path="/paiadvertising" element={<PaidAdvertising />} />
+                <Route
+                  path="/contentmarketing"
+                  element={<ContantMarketing />}
+                />
+
                 <Route path="*" element={<NotFound />} />
                 <Route path="/login" element={<Login />} />
               </Routes>
               <CustomPointer />
-              <Mode toggle={toggle} setToggle={setToggle} />
+              {/* <Mode toggle={toggle} setToggle={setToggle} /> */}
+              <ScrollToTop />
               <ButtomIcon />
               <Footer />
             </div>

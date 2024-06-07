@@ -89,12 +89,12 @@ export const marketing = [
     {
         id: 4,
         title: "Paid Advertising",
-        path: "/paidad"
+        path: "/paiadvertising"
     },
 
     {
         id: 4,
         title: "Content Marketing",
-        path: "/contentmarket"
+        path: "/contentmarketing"
     }
 ]
