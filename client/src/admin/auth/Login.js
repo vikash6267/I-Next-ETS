@@ -101,7 +101,7 @@ const Login = () => {
         onChange={handleChange}
         id="userId"
         placeholder="Enter User ID"
-        className="focus:outline-none w-[30%] py-2 px-4 border border-gray-300"
+        className="focus:outline-none md:w-[30%] py-2  w-[70%]   px-4 border border-gray-300"
         type="text"
         value={formData.userId}
       />
@@ -109,7 +109,7 @@ const Login = () => {
         onChange={handleChange}
         id="password"
         placeholder="Enter Password"
-        className="focus:outline-none w-[30%] py-2 px-4 border border-gray-300"
+        className="focus:outline-none md:w-[30%] w-[70%] py-2 px-4 border border-gray-300"
         type="password"
         value={formData.password}
       />

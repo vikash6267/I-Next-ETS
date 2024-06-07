@@ -99,6 +99,9 @@ function Footer() {
                 <li className="menu-item menu-item-type-post_type menu-item-object-page">
                   <Link to="#">Reviews</Link>
                 </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <Link to="/Employee_login">Employee-Login</Link>
+                </li>
               </ul>
             </div>
           </div>
