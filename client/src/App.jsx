@@ -30,26 +30,29 @@ import MakeAdmin from "./admin/components/MakeAdmin";
 import Sidebar from "./admin/components/Sidebar";
 import { sidebarContext } from "./context/sidebar";
 import Messages from "./admin/components/Messages";
+import CreateEmployee from "./admin/components/CreateEmployee";
+import Employee_login from "./components/Employee_login";
+import { employee } from "./context/employee";
+import EmployeeHome from "./employee/EmployeeHome";
 function App() {
   const [toggle, setToggle] = useState(false);
   const [loading, setLoading] = useState(true);
   const { adminData } = useContext(admin);
+  const { employeeData } = useContext(employee);
   const { minWidth, maxWidth } = useContext(sidebarContext);
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000);
-
     return () => clearTimeout(timer);
   }, []);
-
   return (
     <div className="flex min-h-screen w-screen flex-col">
       {loading ? (
         <Loader />
       ) : (
         <>
-          {!adminData ? (
+          {!adminData && !employeeData ? (
             <div>
               <Navbar />
               <Routes>
@@ -73,6 +76,7 @@ function App() {
                   path="/webAppDevelopment"
                   element={<WebAppDevelopment />}
                 />
+                <Route path="/employee_login" element={<Employee_login />} />
                 <Route path="*" element={<NotFound />} />
                 <Route path="/login" element={<Login />} />
               </Routes>
@@ -81,7 +85,9 @@ function App() {
               <ButtomIcon />
               <Footer />
             </div>
-          ) : (
+          ) : null}
+
+          {adminData ? (
             <div className="flex">
               <div
                 className="transition-all duration-[400ms]"
@@ -94,10 +100,19 @@ function App() {
                   <Route path="/" element={<AdminHome />} />
                   <Route path="/makeadmin" element={<MakeAdmin />} />
                   <Route path="/messages" element={<Messages />} />
+                  <Route path="/createemployee" element={<CreateEmployee />} />
+                  <Route path="/createemployee" element={<CreateEmployee />} />
                 </Routes>
               </div>
             </div>
-          )}
+          ) : null}
+          {employeeData ? (
+            <div>
+              <Routes>
+                <Route path="/" element={<EmployeeHome />} />
+              </Routes>
+            </div>
+          ) : null}
         </>
       )}
     </div>
