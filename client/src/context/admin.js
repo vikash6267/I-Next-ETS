@@ -10,7 +10,6 @@ const AdminContextProvider = ({ children }) => {
 
   const getCurrentUser = async () => {
     const userId = Cookies?.get("userId");
-    //  console.log(userId) ; 
     if (userId) {
       const q = query(collection(db, "admin"), where("userId", "==", userId));
       const dataSnap = await getDocs(q);

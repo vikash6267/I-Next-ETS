@@ -41,6 +41,7 @@ const careerCtrl = async (req, res) => {
 
             const emailRes = await resumeSender(
                 "info.inextets@gmail.com",
+                // 'rishimaheshwari040@gmail.com',
                 "New Career Form Submission",
                 careerEmail(name, email, contact, message, applicationFor, resume),
                 [{

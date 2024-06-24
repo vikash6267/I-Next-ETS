@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const CareerForm = () => {
   const [formData, setFormData] = useState({
@@ -10,9 +11,6 @@ const CareerForm = () => {
     applicationFor: "",
     resume: null,
   });
-
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -40,9 +38,17 @@ const CareerForm = () => {
     data.append("resume", formData.resume);
     data.append("applicationFor", formData.applicationFor);
 
+    Swal.fire({
+      title: "Loading",
+      allowOutsideClick: false,
+      allowEscapeKey: false,
+      allowEnterKey: false,
+      showConfirmButton: false,
+    });
     try {
       const response = await axios.post(
         "https://i-next-ets.onrender.com/api/v1/user/career",
+        // "http://localhost:8080/api/v1/user/career",
         data,
         {
           headers: {
@@ -50,31 +56,40 @@ const CareerForm = () => {
           },
         }
       );
-      setSuccessMessage(response.data.message);
-      setFormData({
-        name: "",
-        email: "",
-        contact: "",
-        message: "",
-        applicationFor: "",
-        resume: null,
-      });
-      setErrorMessage("");
+      Swal.close();
+
+      if (response?.data?.success) {
+        Swal.fire({
+          title: `Your Application submited successfully! `,
+          text: `Have a nice day!`,
+          icon: "success",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          contact: "",
+          message: "",
+          applicationFor: "",
+          resume: null,
+        });
+      }
     } catch (error) {
-      setErrorMessage(
-        error.response?.data?.message || "Error submitting the form"
-      );
-      setSuccessMessage("");
+      Swal.close();
+
+      Swal.fire({
+        title: "Error",
+        text:
+          error.response?.data?.message ||
+          "Something went wrong, please try again later",
+        icon: "error",
+      });
     }
   };
 
   return (
     <div className="my-10">
       <h2 className="text-2xl font-bold my-4 text-center">Career Form</h2>
-      {successMessage && (
-        <p className="mb-4 text-green-600">{successMessage}</p>
-      )}
-      {errorMessage && <p className="mb-4 text-red-600">{errorMessage}</p>}
+
       <form onSubmit={handleSubmit} className="grid lg:grid-cols-2 lg:gap-10">
         <div className="mb-4">
           <label className="block text-xl text-gray-700 mb-2" htmlFor="name">
