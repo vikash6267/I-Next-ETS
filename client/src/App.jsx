@@ -25,6 +25,14 @@ import WebAppDevelopment from "./components/development/WebAppDevelopment";
 import { admin } from "./context/admin";
 import AdminHome from "./admin/Home/Home";
 import Login from "./admin/auth/Login";
+import MakeAdmin from "./admin/components/MakeAdmin";
+import Sidebar from "./admin/components/Sidebar";
+import { sidebarContext } from "./context/sidebar";
+import Messages from "./admin/components/Messages";
+import CreateEmployee from "./admin/components/CreateEmployee";
+import Employee_login from "./components/Employee_login";
+import { employee } from "./context/employee";
+import EmployeeHome from "./employee/EmployeeHome";
 import Header from "./admin/components/Header";
 import Service from "./pages/Service";
 import CMSDevelopment from "./components/development/CMSDevelopment";
@@ -41,22 +49,21 @@ function App() {
   const [toggle, setToggle] = useState(false);
   const [loading, setLoading] = useState(true);
   const { adminData } = useContext(admin);
-
+  const { employeeData } = useContext(employee);
+  const { minWidth, maxWidth } = useContext(sidebarContext);
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000);
-
     return () => clearTimeout(timer);
   }, []);
-
   return (
     <div className="flex min-h-screen w-screen flex-col">
       {loading ? (
         <Loader />
       ) : (
         <>
-          {!adminData ? (
+          {!adminData && !employeeData ? (
             <div>
               <Navbar />
               <Routes>
@@ -82,6 +89,8 @@ function App() {
                   path="/webAppDevelopment"
                   element={<WebAppDevelopment />}
                 />
+                <Route path="/employee_login" element={<Employee_login />} />
+
                 <Route path="/cmsdev" element={<CMSDevelopment />} />
                 <Route path="/ecomdev" element={<EcomDevlopment />} />
                 <Route path="/softwaredev" element={<SoftwareDevelopment />} />
@@ -105,14 +114,34 @@ function App() {
               <ButtomIcon />
               <Footer />
             </div>
-          ) : (
+          ) : null}
+
+          {adminData ? (
+            <div className="flex">
+              <div
+                className="transition-all duration-[400ms]"
+                style={{ width: `${minWidth}%` }}
+              >
+                <Sidebar />
+              </div>
+              <div style={{ width: `${maxWidth}%` }}>
+                <Routes>
+                  <Route path="/" element={<AdminHome />} />
+                  <Route path="/makeadmin" element={<MakeAdmin />} />
+                  <Route path="/messages" element={<Messages />} />
+                  <Route path="/createemployee" element={<CreateEmployee />} />
+                  <Route path="/createemployee" element={<CreateEmployee />} />
+                </Routes>
+              </div>
+            </div>
+          ) : null}
+          {employeeData ? (
             <div>
-              <Header />
               <Routes>
-                <Route path="/" element={<AdminHome />} />
+                <Route path="/" element={<EmployeeHome />} />
               </Routes>
             </div>
-          )}
+          ) : null}
         </>
       )}
     </div>
