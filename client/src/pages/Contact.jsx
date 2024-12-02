@@ -61,12 +61,12 @@ const Contact = () => {
     <div className="mt-[87px] w-11/12 mx-auto">
       <iframe
         title="rishi"
-        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3664.174853234982!2d77.41524887532243!3d23.30941387897375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDE4JzMzLjkiTiA3N8KwMjUnMDQuMiJF!5e0!3m2!1sen!2sin!4v1716010214913!5m2!1sen!2sin"
-        className="w-full h-[70vh]"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.24334420191!2d77.43451330000002!3d23.234230300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c426995118ba1%3A0x5b7132b3422f2cfd!2sI%20NEXT%20ETS-%20website%20design%20and%20digital%20marketing%20company%20in%20bhopal%20mobille%20app%20developement!5e0!3m2!1sen!2sin!4v1719913977542!5m2!1sen!2sin"
         allowFullScreen
+        className="w-full h-[500px]"
         loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      />
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
 
       <div className=" grid gap-4 main lg:grid lg:grid-cols-2 my-36 items-center">
         <div className="first flex flex-col gap-8">

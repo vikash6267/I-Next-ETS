@@ -10,6 +10,7 @@ const About = () => {
   return (
     <div className="mt-[87px] w-11/12 mx-auto">
       <br />
+      {/* test  */}
       <AboutHero />
       <AboutCard />
       <Culture />

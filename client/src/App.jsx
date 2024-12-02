@@ -30,10 +30,10 @@ import Sidebar from "./admin/components/Sidebar";
 import { sidebarContext } from "./context/sidebar";
 import Messages from "./admin/components/Messages";
 import CreateEmployee from "./admin/components/CreateEmployee";
-import Employee_login from "./components/Employee_login";
+import EmployeeLogin from "./components/Employee_login";
 import { employee } from "./context/employee";
 import EmployeeHome from "./employee/EmployeeHome";
-import Header from "./admin/components/Header";
+// import Header from "./admin/components/Header";
 import Service from "./pages/Service";
 import CMSDevelopment from "./components/development/CMSDevelopment";
 import EcomDevlopment from "./components/development/EcomDevlopment";
@@ -46,7 +46,7 @@ import PaidAdvertising from "./components/marketing/PaidAdvertising";
 import ContantMarketing from "./components/marketing/ContantMarketing";
 
 function App() {
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
   const [loading, setLoading] = useState(true);
   const { adminData } = useContext(admin);
   const { employeeData } = useContext(employee);
@@ -89,7 +89,7 @@ function App() {
                   path="/webAppDevelopment"
                   element={<WebAppDevelopment />}
                 />
-                <Route path="/employee_login" element={<Employee_login />} />
+                <Route path="/employee_login" element={<EmployeeLogin />} />
 
                 <Route path="/cmsdev" element={<CMSDevelopment />} />
                 <Route path="/ecomdev" element={<EcomDevlopment />} />

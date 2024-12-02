@@ -1,3 +1,40 @@
+import l1 from "../images/port/l1.jpg"
+import l2 from "../images/port/l2.jpg"
+import l3 from "../images/port/l3.jpg"
+import l4 from "../images/port/l4.jpg"
+import l5 from "../images/port/l5.jpg"
+
+import w1 from "../images/port/w1.jpg"
+import w2 from "../images/port/w2.jpg"
+import w3 from "../images/port/w3.jpg"
+import w4 from "../images/port/w4.jpg"
+
+import e1 from "../images/port/e1.jpg"
+import e2 from "../images/port/e2.jpg"
+
+import f1 from "../images/port/f1.jpg"
+import f2 from "../images/port/f2.jpg"
+import f3 from "../images/port/f3.jpg"
+import f4 from "../images/port/f4.jpg"
+import f5 from "../images/port/f5.jpg"
+
+
+import ngoimg from "../images/port/ngo.jpg"
+
+
+import end1 from "../images/port/end1.jpg"
+import end2 from "../images/port/end2.jpg"
+import end3 from "../images/port/end3.jpg"
+
+
+
+import lp1 from "../images/port/lp1.jpg"
+import lp2 from "../images/port/lp2.jpg"
+import lp4 from "../images/port/lp4.jpg"
+import lp3 from "../images/port/lp3.jpg"
+
+
+
 
 export const card = [
     {
@@ -632,3 +669,187 @@ export const service = [
     },
 
 ]
+
+
+
+
+export const wordpress = [
+    {
+        img: w1,
+        title: "7 Day Sorganic",
+        link: "https://7daysorganic.com/"
+    },
+    {
+        img: w2,
+        title: "Whrpc",
+        link: "https://whrpc.org"
+    },
+    {
+        img: w3,
+        title: "W Piun",
+        link: "https://wpiun.org/"
+    },
+    {
+        img: w4,
+        title: "Hsnrealty",
+        link: "https://www.hsnrealty.com/"
+    },
+
+]
+export const fullstack = [
+    {
+        img: f1,
+        title: "Ram Roofing",
+        link: "https://www.ramroofing.net"
+    },
+    {
+        img: f2, title: "Conception Classes",
+        link: "https://conceptionclasses.com/"
+    },
+    {
+        img: f3, title: "Studio Orange bhopal",
+        link: "https://studioorangebhopal.com"
+    },
+    {
+        img: f4, title: "Astroamar",
+        link: "https://www.astroamar.com"
+    },
+    {
+        img: f5, title: "Aangan Wadi Uttarpradesh",
+        link: "https://aanganwadiuttarpradesh.com/"
+    },
+]
+export const ngo = [
+    {
+        img: ngoimg,
+        title: "Team Pahal Bareli",
+        link: "https://www.teampahal.org"
+    },
+
+
+]
+export const ecom = [
+    {
+        img: e1,
+        title: "The Power Solution",
+        link: "https://thepowersolution.co.in"
+    },
+    {
+        img: e2,
+        title: "Mithrastayin",
+        link: "https://mithrastayin.com/"
+    },
+
+]
+export const popular = [
+    {
+        img: end1,
+        title: "Satisfied job portal",
+        link: "https://realisedreamsin3days.co.in/"
+    },
+    {
+        img: end2,
+        title: "Ram Ji ki Sena",
+        link: "https://ramjikisena.com/"
+    },
+    {
+        img: end3,
+        title: "India Ahead",
+        link: "https://www.indiaaheadlive.com"
+    },
+
+
+]
+
+
+export const news = [
+    {
+        img: end3,
+        title: "India Ahead",
+        link: "https://www.indiaaheadlive.com"
+    },
+    {
+        img: end3,
+        title: "Pahili Khabar",
+        link: "https://www.pahilikhabarnews.com"
+    },
+
+]
+export const latest = [
+
+    {
+        img: lp1,
+        title: "The Bharat Exporter",
+        link: "https://thebharatexporter.com/"
+    },
+    {
+        img: lp2,
+        title: "The Engineer Workers",
+        link: "https://the-engineer-workers.vercel.app/"
+    },
+    {
+        img: lp3,
+        title: "Raghuveer Travels",
+        link: "https://raghuveertravels.com/"
+    },
+    {
+        img: lp4,
+        title: "Toy Store",
+        link: "https://toy-store-iota-seven.vercel.app"
+    },
+    {
+        img: end2,
+        title: "Ram Ji ki Sena",
+        link: "https://ramjikisena.com/"
+
+    },
+    {
+        img: end1,
+        title: "Satisfied Job ",
+        link: "https://realisedreamsin3days.co.in/"
+
+    },
+    {
+        img: end3,
+        title: "India Ahead",
+        link: "https://www.indiaaheadlive.com"
+    },
+
+    {
+        img: end3,
+        title: "Pahili Khabar",
+        link: "https://www.pahilikhabarnews.com"
+    },
+
+]
+export const landingPage = [
+    {
+        img: l1,
+        title: "Sangam Newkolkata",
+        link: "https://sangam.newkolkata.in"
+    },
+    {
+        img: l2,
+
+        title: "Drtitoriac linics",
+        link: "https://www.drtitoriaclinics.com"
+    },
+    {
+        img: l3,
+
+        title: "Neo Aesthetica",
+        link: "https://www.neoaesthetica.com/"
+    },
+    {
+        img: l4,
+
+        title: "New kolkata Flats",
+        link: "https://newkolkataflats.com/"
+    },
+    {
+        img: l5,
+        title: "Theroyalganges",
+        link: "https://www.theroyalganges.com/property-item/apartments/"
+    },
+]
+

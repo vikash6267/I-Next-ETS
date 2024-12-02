@@ -19,7 +19,6 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
       ...formData,
       [e.target.name]: e.target.value,
     });
-    // console.log(formData);
   };
 
   const handleSubmit = async (e) => {
@@ -48,24 +47,24 @@ const GetInTouchModal = ({ isOpen, onClose }) => {
     });
 
     try {
-      // const response = await axios.post(
-      //   "http://localhost:8080/api/v1/user/contact",
-      //   formData
-      // );
+      const response = await axios.post(
+        "https://i-next-ets.onrender.com/api/v1/user/contact",
+        formData
+      );
 
       const collectionRef = collection(db, "touchData");
-      const newData = await addDoc(collectionRef, formData);
+      await addDoc(collectionRef, formData);
       // if (response?.data) {
-      Swal.fire({
-        title: "Good job!",
-        text: "Your message has been sent successfully!",
-        icon: "success",
-      });
 
-      onClose();
-      // console.log(response.data);
-      // }
-      setFormData({ name: "", email: "", contact: "", message: "" });
+      if (response?.data?.success) {
+        Swal.fire({
+          title: "Good job!",
+          text: "Your message has been sent successfully!",
+          icon: "success",
+        });
+        setFormData({ name: "", email: "", contact: "", message: "" });
+        onClose();
+      }
     } catch (error) {
       console.log(error);
       Swal.fire({

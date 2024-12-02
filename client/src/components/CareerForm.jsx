@@ -103,6 +103,7 @@ const CareerForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
+            placeholder="Enter Your Name"
           />
         </div>
         <div className="mb-4">
@@ -117,6 +118,7 @@ const CareerForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
+            placeholder="Enter Your Email"
           />
         </div>
         <div className="mb-4">
@@ -131,6 +133,7 @@ const CareerForm = () => {
             value={formData.contact}
             onChange={handleChange}
             required
+            placeholder="Enter Your Phone Number"
           />
         </div>
         <div className="mb-4">
@@ -148,7 +151,7 @@ const CareerForm = () => {
             onChange={handleChange}
             required
           >
-            <option value="">Select Position</option>
+            <option value="">-- Select Position --</option>
             <option value="React JS Developer">React JS Developer</option>
             <option value="Node.js Developer">Node.js Developer</option>
             <option value="Frontend Developer">Frontend Developer</option>
@@ -174,6 +177,7 @@ const CareerForm = () => {
             value={formData.message}
             onChange={handleChange}
             required
+            placeholder="Enter Your Message"
           ></textarea>
         </div>
         <div className="mb-4">
